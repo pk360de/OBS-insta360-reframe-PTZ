@@ -1,0 +1,7 @@
+# Local OBS imports and personal exports
+.local/
+*.bak
+*.log
+Thumbs.db
+.DS_Store
+node_modules/

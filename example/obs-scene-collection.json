@@ -1,0 +1,165 @@
+{
+  "name": "OBS-insta360-reframe-PTZ Demo",
+  "sources": [
+    {
+      "prev_ver": 553648129,
+      "name": "Test Pattern",
+      "uuid": "153a9009-51d4-4e67-bde8-f2f604b71954",
+      "id": "image_source",
+      "versioned_id": "image_source",
+      "settings": {
+        "file": "__REPO_ROOT__/example/sphere_2880x1440.jpg"
+      },
+      "mixers": 0,
+      "sync": 0,
+      "flags": 0,
+      "volume": 1,
+      "balance": 0.5,
+      "enabled": true,
+      "muted": false,
+      "hotkeys": {},
+      "deinterlace_mode": 0,
+      "deinterlace_field_order": 0,
+      "monitoring_type": 0,
+      "monitoring_enabled": false,
+      "private_settings": {}
+    },
+    {
+      "prev_ver": 553648129,
+      "name": "PTZ - Demo 16x9",
+      "uuid": "f05a41f5-5e8b-4219-ac39-4fb6cd2cd027",
+      "id": "scene",
+      "versioned_id": "scene",
+      "settings": {
+        "id_counter": 1,
+        "custom_size": false,
+        "items": [
+          {
+            "name": "Test Pattern",
+            "source_uuid": "153a9009-51d4-4e67-bde8-f2f604b71954",
+            "visible": true,
+            "locked": true,
+            "rot": 0,
+            "scale_ref": {
+              "x": 1920,
+              "y": 1080
+            },
+            "align": 5,
+            "bounds_type": 1,
+            "bounds_align": 0,
+            "bounds_crop": false,
+            "crop_left": 0,
+            "crop_top": 0,
+            "crop_right": 0,
+            "crop_bottom": 0,
+            "id": 1,
+            "group_item_backup": false,
+            "pos": {
+              "x": 0,
+              "y": 0
+            },
+            "pos_rel": {
+              "x": -1.7777777777777777,
+              "y": -1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "scale_rel": {
+              "x": 1,
+              "y": 1
+            },
+            "bounds": {
+              "x": 1920,
+              "y": 1080
+            },
+            "bounds_rel": {
+              "x": 3.5555555555555554,
+              "y": 2
+            },
+            "scale_filter": "disable",
+            "blend_method": "default",
+            "blend_type": "normal",
+            "show_transition": {
+              "duration": 300
+            },
+            "hide_transition": {
+              "duration": 300
+            },
+            "private_settings": {}
+          }
+        ]
+      },
+      "mixers": 0,
+      "sync": 0,
+      "flags": 0,
+      "volume": 1,
+      "balance": 0.5,
+      "enabled": true,
+      "muted": false,
+      "hotkeys": {},
+      "deinterlace_mode": 0,
+      "deinterlace_field_order": 0,
+      "monitoring_type": 0,
+      "monitoring_enabled": false,
+      "private_settings": {},
+      "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+      "filters": [
+        {
+          "prev_ver": 553648129,
+          "name": "PTZ - Perspective 16x9",
+          "uuid": "b4322679-a3d7-409c-882c-fea3f80211e6",
+          "id": "shader_filter",
+          "versioned_id": "shader_filter",
+          "settings": {
+            "from_file": true,
+            "shader_file_name": "__REPO_ROOT__/shaders/insta360_ptz_reframe.shader",
+            "override_entire_effect": false,
+            "pan": 0,
+            "tilt": 0,
+            "roll": 0,
+            "fov": 90,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "mixers": 0,
+          "sync": 0,
+          "flags": 0,
+          "volume": 1,
+          "balance": 0.5,
+          "enabled": true,
+          "muted": false,
+          "hotkeys": {},
+          "deinterlace_mode": 0,
+          "deinterlace_field_order": 0,
+          "monitoring_type": 0,
+          "monitoring_enabled": false,
+          "private_settings": {}
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "scene_order": [
+    {
+      "name": "PTZ - Demo 16x9"
+    }
+  ],
+  "current_scene": "PTZ - Demo 16x9",
+  "current_program_scene": "PTZ - Demo 16x9",
+  "current_transition": "Fade",
+  "transition_duration": 300,
+  "transitions": [],
+  "quick_transitions": [],
+  "saved_projectors": [],
+  "preview_locked": true,
+  "scaling_enabled": false,
+  "scaling_level": 0,
+  "scaling_off_x": 0,
+  "scaling_off_y": 0,
+  "modules": {},
+  "version": 2
+}

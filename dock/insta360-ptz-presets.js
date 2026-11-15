@@ -1,0 +1,54 @@
+// Seed demo views only when this exact target has no saved presets.
+// Existing presets are never replaced.
+globalThis.PTZ_MIGRATION = {
+  "version": 2,
+  "scene": "PTZ - Demo 16x9",
+  "filter": "PTZ - Perspective 16x9",
+  "presets": [
+    {
+      "id": "demo-inner",
+      "name": "Inner lens",
+      "pose": {
+        "pan": 0,
+        "tilt": 0,
+        "roll": 0,
+        "fov": 90
+      }
+    },
+    {
+      "id": "demo-outer",
+      "name": "Outer lens",
+      "pose": {
+        "pan": -180,
+        "tilt": 0,
+        "roll": 0,
+        "fov": 90
+      }
+    },
+    {
+      "id": "demo-empty-3",
+      "name": "View 3",
+      "pose": null
+    },
+    {
+      "id": "demo-empty-4",
+      "name": "View 4",
+      "pose": null
+    },
+    {
+      "id": "demo-empty-5",
+      "name": "View 5",
+      "pose": null
+    },
+    {
+      "id": "demo-empty-6",
+      "name": "View 6",
+      "pose": null
+    }
+  ],
+  "homeView": {
+    "lens": "inner",
+    "fov": 90
+  },
+  "collection": "OBS-insta360-reframe-PTZ Demo"
+};

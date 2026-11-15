@@ -1,0 +1,23 @@
+name: Check project
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: JavaScript syntax
+        run: |
+          node --check dock/insta360-ptz.js
+          node --check dock/insta360-ptz-i18n.js
+      - name: Simulated OBS integration
+        run: node tests/ptz-integration-test.cjs
+      - name: Repository and documentation
+        run: node tests/repository-check.cjs
+      - name: Prepare local scene paths
+        shell: pwsh
+        run: ./tools/Prepare-SceneCollection.ps1
